@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ヤマハの現行電子ドラム全14モデルの比較・条件診断・付属品・型番の読み方。">
+<meta name="color-scheme" content="light dark">
+<title>ヤマハ電子ドラム 現行モデル 比較・診断</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A5%81</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body,h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0}
+img,svg,video{max-width:100%;height:auto}
+button,input,select,textarea{font:inherit}
+table{border-collapse:collapse}
+</style>
+<style>
+/* ============ tokens ============ */
+:root{
+  --bg:#F3F3F0;
+  --bg-2:#E9E9E4;
+  --surface:#FFFFFF;
+  --surface-2:#FAFAF7;
+  --ink:#16181A;
+  --ink-2:#3D4247;
+  --muted:#71767C;
+  --line:#DCDCD5;
+  --line-2:#C6C6BD;
+  --accent:#A85B1B;        /* シンバルの地金 */
+  --accent-soft:#F0E2D3;
+  --accent-ink:#8A4A14;
+  --cool:#2C5A60;          /* メッシュ／ハードウェアの青緑 */
+  --cool-soft:#DDE8E8;
+  --shadow:0 1px 2px rgba(22,24,26,.05), 0 8px 24px -12px rgba(22,24,26,.18);
+  --radius:3px;
+  --font-display:"Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif JP",Georgia,serif;
+  --font-body:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",YuGothic,"Noto Sans JP",system-ui,sans-serif;
+  --font-mono:"SF Mono",Menlo,ui-monospace,"Hiragino Sans",monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121315;
+    --bg-2:#0C0D0F;
+    --surface:#1B1D20;
+    --surface-2:#212428;
+    --ink:#ECECE8;
+    --ink-2:#C6C8C6;
+    --muted:#93989D;
+    --line:#2D3136;
+    --line-2:#3D4247;
+    --accent:#D89049;
+    --accent-soft:#3A2A1A;
+    --accent-ink:#E8A863;
+    --cool:#5FA5AC;
+    --cool-soft:#1E2E30;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121315;
+  --bg-2:#0C0D0F;
+  --surface:#1B1D20;
+  --surface-2:#212428;
+  --ink:#ECECE8;
+  --ink-2:#C6C8C6;
+  --muted:#93989D;
+  --line:#2D3136;
+  --line-2:#3D4247;
+  --accent:#D89049;
+  --accent-soft:#3A2A1A;
+  --accent-ink:#E8A863;
+  --cool:#5FA5AC;
+  --cool-soft:#1E2E30;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px -14px rgba(0,0,0,.7);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+a{color:var(--accent-ink)}
+button{font-family:inherit;font-size:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+
+/* ============ masthead ============ */
+.masthead{
+  position:relative;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,var(--surface),var(--bg));
+  overflow:hidden;
+}
+.masthead-inner{
+  max-width:1180px;margin:0 auto;padding:56px 24px 0;
+  position:relative;z-index:2;
+}
+.lathe{
+  position:absolute;top:-190px;right:-150px;width:620px;height:620px;
+  z-index:1;pointer-events:none;opacity:.5;
+}
+@media (max-width:760px){.lathe{width:420px;height:420px;top:-160px;right:-180px;opacity:.35}}
+.eyebrow{
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;
+}
+h1{font-size:clamp(30px,5.4vw,52px);letter-spacing:.01em;margin:14px 0 0}
+h1 .thin{color:var(--muted);font-weight:400}
+.lede{
+  margin-top:16px;max-width:60ch;color:var(--ink-2);font-size:15px;line-height:1.85;
+}
+.stamp{
+  display:inline-flex;align-items:baseline;gap:10px;margin-top:20px;
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--muted);
+}
+.stamp b{color:var(--accent-ink);font-weight:600}
+
+/* tabs */
+.tabs{display:flex;gap:2px;margin-top:36px;flex-wrap:wrap}
+.tab{
+  appearance:none;background:none;border:none;cursor:pointer;
+  padding:12px 20px;font-size:14px;font-weight:600;color:var(--muted);
+  border-bottom:2px solid transparent;transition:color .18s,border-color .18s;
+  white-space:nowrap;
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+/* ============ layout ============ */
+main{max-width:1180px;margin:0 auto;padding:44px 24px 96px}
+.panel[hidden]{display:none}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.sec-head h2{font-size:24px}
+.sec-head p{color:var(--muted);font-size:14px;max-width:62ch}
+
+/* ============ finder ============ */
+.finder{display:grid;grid-template-columns:210px 1fr;gap:44px;align-items:start}
+@media (max-width:860px){.finder{grid-template-columns:1fr;gap:24px}}
+
+.rail{
+  display:flex;flex-direction:column;gap:0;
+  border-left:1px solid var(--line);
+  position:sticky;top:24px;
+}
+@media (max-width:860px){
+  .rail{flex-direction:row;border-left:none;border-top:1px solid var(--line);
+    overflow-x:auto;position:static;padding-top:4px}
+}
+.rail-item{
+  display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:baseline;
+  padding:9px 0 9px 16px;margin-left:-1px;border-left:2px solid transparent;
+  font-size:12.5px;color:var(--muted);transition:color .18s,border-color .18s;
+  cursor:pointer;background:none;border-top:none;border-right:none;border-bottom:none;
+  text-align:left;
+}
+@media (max-width:860px){
+  .rail-item{border-left:none;border-top:2px solid transparent;padding:8px 14px 8px 0;
+    margin-left:0;margin-top:-1px;white-space:nowrap;grid-template-columns:auto;gap:0}
+  .rail-item .rail-a{display:none}
+}
+.rail-item[disabled]{cursor:default}
+.rail-item .rail-n{font-family:var(--font-mono);font-size:10px;letter-spacing:.05em}
+.rail-item.done{color:var(--ink-2)}
+.rail-item.done .rail-a{color:var(--accent-ink);display:block;font-size:11.5px;line-height:1.5}
+.rail-item.active{color:var(--ink);border-left-color:var(--accent);font-weight:600}
+@media (max-width:860px){.rail-item.active{border-top-color:var(--accent);border-left-color:transparent}}
+
+.stage{min-height:420px}
+.qcard{animation:rise .32s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.qcard{animation:none}}
+.qnum{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--accent-ink);font-weight:600}
+.qtitle{font-size:clamp(21px,3vw,28px);margin:8px 0 6px}
+.qhint{color:var(--muted);font-size:13.5px;margin-bottom:22px}
+
+.opts{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.opt{
+  appearance:none;text-align:left;cursor:pointer;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;display:flex;flex-direction:column;gap:5px;
+  transition:border-color .16s,transform .16s,box-shadow .16s;
+}
+.opt:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.opt .ol{font-weight:600;font-size:15px;line-height:1.5}
+.opt .od{font-size:12.5px;color:var(--muted);line-height:1.65}
+
+.qfoot{margin-top:24px;display:flex;gap:16px;align-items:center}
+.linkbtn{
+  appearance:none;background:none;border:none;cursor:pointer;padding:0;
+  font-size:13px;color:var(--muted);border-bottom:1px solid var(--line-2);
+}
+.linkbtn:hover{color:var(--ink)}
+
+/* result */
+.result{animation:rise .4s cubic-bezier(.2,.7,.3,1) both}
+@media (prefers-reduced-motion:reduce){.result{animation:none}}
+.verdict{
+  background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);
+  border-radius:var(--radius);padding:28px 28px 26px;box-shadow:var(--shadow);
+}
+.verdict-tag{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;color:var(--accent-ink);font-weight:600}
+.verdict h3{font-size:clamp(26px,4.4vw,38px);margin:6px 0 2px;letter-spacing:.01em}
+.verdict .series{font-size:13px;color:var(--muted)}
+.price-row{display:flex;align-items:baseline;gap:12px;margin-top:16px;flex-wrap:wrap}
+.price{font-family:var(--font-mono);font-size:26px;font-weight:600;letter-spacing:-.01em}
+.price small{font-size:12px;font-weight:400;color:var(--muted);margin-left:4px;letter-spacing:0}
+.why{margin-top:22px;display:flex;flex-direction:column;gap:9px}
+.why li{
+  list-style:none;display:grid;grid-template-columns:auto 1fr;gap:10px;
+  font-size:13.5px;line-height:1.7;color:var(--ink-2);
+}
+.why li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:9px}
+.why ul{margin:0;padding:0}
+.caveat{
+  margin-top:20px;padding:13px 15px;background:var(--cool-soft);border-left:2px solid var(--cool);
+  font-size:12.5px;line-height:1.7;color:var(--ink-2);border-radius:0 var(--radius) var(--radius) 0;
+}
+.caveat b{color:var(--cool);font-weight:600;letter-spacing:.02em}
+
+.runners{margin-top:34px}
+.runners h4{
+  font-family:var(--font-body);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 12px;font-weight:600;
+}
+.runner-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.runner{
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
+  display:flex;flex-direction:column;gap:4px;
+}
+.runner .rn{font-weight:600;font-size:15px}
+.runner .rp{font-family:var(--font-mono);font-size:14px;color:var(--accent-ink)}
+.runner .rw{font-size:12.5px;color:var(--muted);line-height:1.65;margin-top:4px}
+
+/* ============ table ============ */
+.chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+#chips{margin-bottom:9px}
+.chiplabel{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-right:4px}
+.chip{
+  appearance:none;cursor:pointer;background:var(--surface);border:1px solid var(--line);
+  padding:6px 14px;border-radius:100px;font-size:12.5px;color:var(--muted);
+  transition:all .16s;
+}
+.chip:hover{border-color:var(--line-2);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+.tablewrap{
+  overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+  -webkit-overflow-scrolling:touch;
+}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:12.5px}
+.tablewrap table{min-width:1100px}
+th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.6}
+.tablewrap thead th{
+  position:sticky;top:0;z-index:3;background:var(--surface-2);
+  font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;white-space:nowrap;border-bottom:1px solid var(--line-2);
+}
+.tablewrap tbody th{
+  position:sticky;left:0;z-index:2;background:var(--surface);
+  font-weight:600;font-size:13px;white-space:nowrap;
+  border-right:1px solid var(--line);
+}
+.tablewrap thead th:first-child{z-index:4;left:0;background:var(--surface-2);border-right:1px solid var(--line-2)}
+.tablewrap tbody tr:hover th,.tablewrap tbody tr:hover td{background:var(--surface-2)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+td.p{font-family:var(--font-mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sr-badge{
+  display:inline-block;font-size:10px;letter-spacing:.06em;padding:1px 7px;border-radius:100px;
+  border:1px solid var(--line-2);color:var(--muted);margin-left:8px;vertical-align:middle;font-weight:500;
+}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.d-402{background:#8FA3A8}.d-6{background:var(--cool)}.d-8{background:var(--accent)}.d-10{background:#7A2F2F}
+:root[data-theme="dark"] .d-10{background:#C06A6A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .d-10{background:#C06A6A}}
+
+/* ============ gear cards ============ */
+.gear-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.gear{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;display:flex;flex-direction:column;gap:8px;
+}
+.gear .gn{font-family:var(--font-display);font-size:19px;font-weight:600}
+.gear .gp{font-family:var(--font-mono);font-size:13.5px;color:var(--accent-ink)}
+.gear .gd{font-size:13px;color:var(--ink-2);line-height:1.75}
+.gear dl{margin:6px 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;font-size:12px}
+.gear dt{color:var(--muted)}
+.gear dd{margin:0;font-variant-numeric:tabular-nums}
+
+/* ============ decoder ============ */
+.decoder{display:flex;flex-direction:column;gap:44px}
+.dblock{display:flex;flex-direction:column;gap:14px}
+.dblock h3{font-size:17px}
+.dblock h3 .k{
+  font-family:var(--font-mono);font-size:10.5px;letter-spacing:.12em;color:var(--accent-ink);
+  display:block;margin-bottom:5px;font-weight:600;
+}
+.dblock > p{font-size:13.5px;color:var(--ink-2);max-width:64ch;line-height:1.85}
+
+.specimen{
+  font-family:var(--font-mono);font-size:clamp(24px,5.6vw,40px);font-weight:600;
+  letter-spacing:.02em;color:var(--ink);
+}
+.specimen .s1{color:var(--ink)}
+.specimen .s2{color:var(--accent)}
+.specimen .s3{color:var(--cool)}
+.breakdown{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.seg{
+  background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--line-2);
+  border-radius:var(--radius);padding:15px 17px;display:flex;flex-direction:column;gap:6px;
+}
+.seg.t2{border-top-color:var(--accent)}
+.seg.t3{border-top-color:var(--cool)}
+.seg .sc{font-family:var(--font-mono);font-size:16px;font-weight:600}
+.seg .sl{font-size:12.5px;color:var(--ink-2);line-height:1.7}
+
+.dtable-wrap{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow-x:auto}
+.dtable{font-size:13px}
+.dtable thead th{
+  background:var(--surface-2);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;white-space:nowrap;border-bottom:1px solid var(--line-2);
+}
+.dtable td:first-child,.dtable th[scope="row"]{
+  font-family:var(--font-mono);font-weight:600;white-space:nowrap;color:var(--accent-ink);
+  font-size:13px;text-align:left;
+}
+.dtable td:last-child{color:var(--muted);font-size:12px}
+
+.worked{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.wk{
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 20px;display:flex;flex-direction:column;gap:9px;
+}
+.wk .wm{font-family:var(--font-mono);font-size:17px;font-weight:600}
+.wk .wp{display:flex;flex-direction:column;gap:5px;margin:0;padding:0}
+.wk .wp li{
+  list-style:none;display:grid;grid-template-columns:74px 1fr;gap:10px;
+  font-size:12.5px;line-height:1.65;color:var(--ink-2);
+}
+.wk .wp li b{font-family:var(--font-mono);font-weight:600;color:var(--accent-ink);font-size:12px}
+.wk .wr{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:9px;line-height:1.7}
+
+.note{
+  margin-top:32px;font-size:12.5px;color:var(--muted);line-height:1.85;
+  border-top:1px solid var(--line);padding-top:18px;
+}
+.note a{color:var(--muted);text-decoration-color:var(--line-2)}
+.note a:hover{color:var(--accent-ink)}
+footer{border-top:1px solid var(--line);background:var(--bg-2)}
+.foot-inner{max-width:1180px;margin:0 auto;padding:26px 24px;font-size:11.5px;color:var(--muted);letter-spacing:.02em}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <svg class="lathe" viewBox="0 0 400 400" aria-hidden="true">
+    <g fill="none" stroke="var(--accent)">
+      <circle cx="200" cy="200" r="196" stroke-opacity=".22"/>
+      <circle cx="200" cy="200" r="182" stroke-opacity=".10"/>
+      <circle cx="200" cy="200" r="170" stroke-opacity=".18"/>
+      <circle cx="200" cy="200" r="155" stroke-opacity=".08"/>
+      <circle cx="200" cy="200" r="143" stroke-opacity=".16"/>
+      <circle cx="200" cy="200" r="128" stroke-opacity=".07"/>
+      <circle cx="200" cy="200" r="117" stroke-opacity=".15"/>
+      <circle cx="200" cy="200" r="102" stroke-opacity=".07"/>
+      <circle cx="200" cy="200" r="91" stroke-opacity=".14"/>
+      <circle cx="200" cy="200" r="77" stroke-opacity=".07"/>
+      <circle cx="200" cy="200" r="65" stroke-opacity=".13"/>
+      <circle cx="200" cy="200" r="52" stroke-opacity=".07"/>
+      <circle cx="200" cy="200" r="40" stroke-opacity=".12"/>
+      <circle cx="200" cy="200" r="27" stroke-opacity=".07"/>
+      <circle cx="200" cy="200" r="15" stroke-opacity=".20"/>
+      <circle cx="200" cy="200" r="6" stroke-opacity=".30"/>
+    </g>
+  </svg>
+  <div class="masthead-inner">
+    <p class="eyebrow">Yamaha Electronic Drums</p>
+    <h1>ヤマハ電子ドラム<br><span class="thin">現行モデル、ぜんぶ。</span></h1>
+    <p class="lede">
+      ヤマハの電子ドラムセットは DTX402 / DTX6 / DTX8 / DTX10 の4シリーズ・14モデル。
+      名前が似ていて差が分かりにくいので、6つの条件に答えるとおすすめが出る診断と、全モデルの仕様を並べた表を用意しました。
+    </p>
+    <p class="stamp"><b>14</b> ドラムセット<span>／</span><b>2</b> 音源モジュール<span>／</span>2026年8月時点</p>
+    <nav class="tabs" role="tablist" aria-label="表示切り替え">
+      <button class="tab" role="tab" id="tab-finder" aria-controls="panel-finder" aria-selected="true">条件から選ぶ</button>
+      <button class="tab" role="tab" id="tab-compare" aria-controls="panel-compare" aria-selected="false">全モデル比較表</button>
+      <button class="tab" role="tab" id="tab-gear" aria-controls="panel-gear" aria-selected="false">音源・関連機器</button>
+      <button class="tab" role="tab" id="tab-acc" aria-controls="panel-acc" aria-selected="false">付属品・アクセサリー</button>
+      <button class="tab" role="tab" id="tab-decoder" aria-controls="panel-decoder" aria-selected="false">型番の読み方</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="panel-finder" role="tabpanel" aria-labelledby="tab-finder">
+    <div class="finder">
+      <nav class="rail" id="rail" aria-label="回答済みの条件"></nav>
+      <div class="stage" id="stage"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-compare" role="tabpanel" aria-labelledby="tab-compare" hidden>
+    <div class="sec-head">
+      <h2>全14モデル 仕様比較</h2>
+      <p>価格は税込のヤマハ希望小売価格。シンバル枚数はハイハットを除いた数です。列は「パッド構成」と「付属品」で絞り込めます。横にスクロールできます。</p>
+    </div>
+    <div class="chips" id="chips"></div>
+    <div class="chips" id="viewchips" aria-label="表示する列"><span class="chiplabel">列</span></div>
+    <div class="tablewrap">
+      <table id="table">
+        <thead><tr id="thead-row"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <p class="note">
+      ※ DTX8 / DTX10 はキックペダルとドラムスツールが別売です（好みのペダルを使う前提の設計）。DTX402・DTX6は日本向けセットとして、いずれもスツールが同梱されます。
+      ※ 仕上げ色はDTX8・DTX10がリアルウッド／ブラックフォレストの2色。
+      ※ 「TCS」はヤマハのシリコン製ヘッド（テクスチャード・セルラー・シリコン）。メッシュよりアコースティックに近い打感で、打音はやや大きめです。DTX6のXP80・XP70もTCSで、メッシュを使うのはDTX6K5-M・DTX8K-M・DTX10K-Mの3機種のみ。
+    </p>
+  </section>
+
+  <section class="panel" id="panel-gear" role="tabpanel" aria-labelledby="tab-gear" hidden>
+    <div class="sec-head">
+      <h2>音源モジュールと、その周辺</h2>
+      <p>セットの音とできることを決めているのが音源モジュール。単体でも買えるので、パッドを買い足しながら組む人はここから選ぶ手もあります。</p>
+    </div>
+    <div class="gear-grid" id="gear"></div>
+    <p class="note">
+      価格はヤマハ希望小売価格（税込）。DD-75・EAD10 はオープン価格のため実勢価格は販売店により異なります。
+    </p>
+  </section>
+
+  <section class="panel" id="panel-acc" role="tabpanel" aria-labelledby="tab-acc" hidden>
+    <div class="sec-head">
+      <h2>箱に入っているもの、入っていないもの</h2>
+      <p>電子ドラムは本体だけでは音を出して座って叩けません。何が付いてきて、何を別に買う必要があるのかを先に押さえておくと、予算の見積もりが狂いません。</p>
+    </div>
+
+    <div class="decoder">
+
+      <div class="dblock">
+        <h3><span class="k">Included</span>キットに付属するもの</h3>
+        <p><b>日本向けのDTX402・DTX6は、ドラムスツール（椅子）まで入った状態で出荷されます。</b>逆にDTX8・DTX10には椅子もキックペダルも付きません。ここが日本向け型番の有無で分かれる最大の実務的な差です。</p>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>付属品</th><th>DTX402</th><th>DTX6</th><th>DTX8 / DTX10</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">音源モジュール</th><td>DTX402</td><td>DTX-PRO</td><td>DTX-PRO／DTX-PROX</td></tr>
+              <tr><th scope="row">ラック</th><td>専用ラック</td><td>DTX6Kラック／RS6</td><td>RS8／RS10-HXR</td></tr>
+              <tr><th scope="row">接続ケーブル</th><td>9chマルチケーブル</td><td>あり</td><td>あり</td></tr>
+              <tr><th scope="row">ドラムスツール</th><td><b>DS550U</b></td><td><b>DS550U</b>（K・K2）<br><b>DS750</b>（K3・K5）</td><td>—　別売</td></tr>
+              <tr><th scope="row">キックペダル</th><td>FP6110A<br>※402KSはKU100フットスイッチ</td><td>FP6110A（K・K2）<br>FP8500C／DFP8500C（K3・K5）</td><td>—　別売</td></tr>
+              <tr><th scope="row">ハイハットスタンド</th><td>—　コントローラー式のため不要</td><td>HS650A<br>※K-XFSはコントローラー式で不要</td><td>HS650A／HS740A</td></tr>
+              <tr><th scope="row">チューニングキー</th><td>あり</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Not included</span>どのモデルにも付いてこないもの</h3>
+        <p>スティック・ヘッドホン・マットは全14モデル共通で非同梱です。ヤマハがDTX同時購入限定のスターターセット（HP5A／HP5ADM）を用意しているのは、この穴を埋めるためです。</p>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>必要なもの</th><th>ヤマハの選択肢</th><th>価格</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">スティック＋<br>ヘッドホン</th><td>HP5A スターターセット　<span class="sr-badge">DTX同時購入限定</span></td><td>¥6,050</td></tr>
+              <tr><th scope="row">上記＋マット</th><td>HP5ADM スターターセット　<span class="sr-badge">DTX同時購入限定</span></td><td>¥18,150</td></tr>
+              <tr><th scope="row">ヘッドホン<br>（単体）</th><td>YH-WL500 ワイヤレス（Bluetooth）</td><td>¥49,500</td></tr>
+              <tr><th scope="row">マット</th><td>DM1314（DTX402・DTX6K-XFS向け）</td><td>¥13,200</td></tr>
+              <tr><th scope="row"></th><td>DM2016（DTX6・DTX8・DTX10向け）　<span class="sr-badge">2026年7月22日で一時受注停止</span></td><td>¥24,200</td></tr>
+              <tr><th scope="row">スピーカー</th><td>MS45DR　2.1chモニターシステム。ラックに直接マウントできる</td><td>¥36,300</td></tr>
+              <tr><th scope="row">キックペダル</th><td>DTX8・DTX10で必須。FP8500C（シングル）／DFP8500C（ツイン）など</td><td>実勢 約2万〜5万円</td></tr>
+              <tr><th scope="row">ドラム椅子</th><td>DTX8・DTX10で必須。DS840（両シリーズの推奨アクセサリー）</td><td>¥23,100</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Pads</span>買い足し用パッド</h3>
+        <p>ラックに空きがあれば、シンバルやタムを後から足せます。DTX-PRO音源はY字ケーブル併用で最大14パッドまで拡張できます。</p>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>モデル</th><th>内容</th><th>価格</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">PCY95AT</th><td>10" シンバルパッド。アタッチメント付きで最も足しやすい</td><td>¥8,800</td></tr>
+              <tr><th scope="row">PCY100</th><td>10" シンバルパッド</td><td>¥9,900</td></tr>
+              <tr><th scope="row">PCY135</th><td>13" 3ゾーン。クラッシュ追加の定番</td><td>¥14,300</td></tr>
+              <tr><th scope="row">PCY155</th><td>15" 3ゾーン。ライドを大きくしたいとき</td><td>¥16,500</td></tr>
+              <tr><th scope="row">PCY175</th><td>17" 3ゾーン。DTX10と同じライド</td><td>¥37,400</td></tr>
+              <tr><th scope="row">TP70 / TP70S</th><td>7" ゴムパッド／3ゾーン版</td><td>¥5,500 / ¥9,900</td></tr>
+              <tr><th scope="row">XP70 / XP80</th><td>7"・8" TCSパッド（DTX6が使うもの）</td><td>¥20,900 / ¥25,300</td></tr>
+              <tr><th scope="row">XP100L-M / XP120L-M</th><td>10"・12" メッシュ（DTX6K5が使うもの）</td><td>¥33,000 / ¥40,700</td></tr>
+              <tr><th scope="row">XP105T-M / XP125T-M</th><td>10"・12" メッシュ＋木胴シェル</td><td>¥61,600 / ¥67,100</td></tr>
+              <tr><th scope="row">XP105T-X / XP125T-X</th><td>10"・12" TCS＋木胴シェル</td><td>¥68,200 / ¥73,700</td></tr>
+              <tr><th scope="row">XP125SD-M / -X</th><td>12" スネアパッド。メッシュ／TCS</td><td>¥67,100 / ¥73,700</td></tr>
+              <tr><th scope="row">RHH135</th><td>13" リアルハイハット。スタンドに載る上下可動式</td><td>¥27,500</td></tr>
+              <tr><th scope="row">HH40 / HH65</th><td>ハイハットコントローラー（スタンド不要のペダル型）</td><td>¥5,500 / ¥8,800</td></tr>
+              <tr><th scope="row">KU100</th><td>キックユニット。踏んでも振動が出ないフットスイッチ型</td><td>¥6,050</td></tr>
+              <tr><th scope="row">KP65 / KP90</th><td>キックパッド</td><td>¥8,800 / ¥30,800</td></tr>
+              <tr><th scope="row">KP100 / KP128</th><td>大型キックパッド。KP128はDTX10と同じ12"</td><td>¥50,600 / ¥93,500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Rack</span>ラックとアタッチメント</h3>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>モデル</th><th>内容</th><th>価格</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">RS6</th><td>DTX6用ラックシステム</td><td>¥33,000</td></tr>
+              <tr><th scope="row">RS8</th><td>DTX8用ラックシステム</td><td>¥46,200</td></tr>
+              <tr><th scope="row">RS10-HXR</th><td>DTX10用ラックシステム</td><td>¥123,420</td></tr>
+              <tr><th scope="row">CYAT500</th><td>シンバルアタッチメント（クランプ付）。シンバル追加時に必要</td><td>¥4,400</td></tr>
+              <tr><th scope="row">TPCL500</th><td>DTXシリーズ用タムホルダー</td><td>¥3,300</td></tr>
+              <tr><th scope="row">RCL500</th><td>タムホルダー／シンバルアタッチメント用クランプ</td><td>¥1,650</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Apps</span>無料アプリ</h3>
+        <div class="worked">
+          <div class="wk">
+            <span class="wm">DTX Touch</span>
+            <p class="wr" style="border-top:none;padding-top:0">DTX-PRO／DTX-PROX用。スマホ・タブレットの画面でキットの音作りとエディットができます。</p>
+          </div>
+          <div class="wk">
+            <span class="wm">DTX402 Touch</span>
+            <p class="wr" style="border-top:none;padding-top:0">DTX402シリーズ用。10種類のトレーニング機能とキット設定を画面から扱えます。</p>
+          </div>
+          <div class="wk">
+            <span class="wm">Rec'n'Share</span>
+            <p class="wr" style="border-top:none;padding-top:0">全シリーズ対応。好きな曲に合わせた演奏を録音・録画して共有できます。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="note">
+      価格はヤマハ希望小売価格（税込）。キックペダルとハイハットスタンド単体の価格はヤマハのアクセサリーページに掲載がないため、販売店表示にもとづく目安を記載しています。
+    </p>
+  </section>
+
+  <section class="panel" id="panel-decoder" role="tabpanel" aria-labelledby="tab-decoder" hidden>
+    <div class="sec-head">
+      <h2>型番の読み方</h2>
+      <p>ヤマハは命名規則を公開していません。以下は、メーカーが明言している部分と、ラインナップ全体の対応関係から逆算した部分を分けて整理したものです。</p>
+    </div>
+
+    <div class="decoder">
+
+      <div class="dblock">
+        <h3><span class="k">Structure</span>日本の型番は2階建て</h3>
+        <p>長い型番は「グローバル型番 ＋ 日本向けバンドル記号」でできています。海外では <span style="font-family:var(--font-mono)">DTX6K3-X</span> までが商品名で、末尾の <span style="font-family:var(--font-mono)">UPS</span> は日本のセット販売用の記号です。この記号が付くモデルにはドラムスツールとキックペダルが同梱され、<b>記号が付かないDTX8K-M・DTX10K-Xなどはどちらも別売</b>になります。</p>
+        <p class="specimen"><span class="s1">DTX6K3</span><span class="s2">-X</span><span class="s3">UPS</span></p>
+        <div class="breakdown">
+          <div class="seg">
+            <span class="sc">DTX6K3</span>
+            <span class="sl">シリーズとグレード。<b>K = Kit</b>（ドラムセット）、続く数字が大きいほど上位構成。</span>
+          </div>
+          <div class="seg t2">
+            <span class="sc">-X</span>
+            <span class="sl">パッド仕様の記号。DTX8・DTX10では <b>X = TCS</b> ／ <b>M = メッシュ</b>。</span>
+          </div>
+          <div class="seg t3">
+            <span class="sc">UPS</span>
+            <span class="sl">日本向けバンドル。<b>スツールとキックペダルを組んだセット</b>であることと、そのペダルの種類を表します。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Confirmed</span>意味が確定している記号</h3>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>記号</th><th>意味</th><th>根拠</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">K</th><td>Kit＝ドラムセット。音源モジュール単体には付かない</td><td>全シリーズ共通</td></tr>
+              <tr><th scope="row">-M</th><td>Mesh。REMO製2プライのメッシュヘッド</td><td>ヤマハがDTX8/10で明記</td></tr>
+              <tr><th scope="row">-X</th><td>TCS（Textured Cellular Silicone）＝シリコンヘッド。DTX6のXP80・XP70もTCS</td><td>ヤマハがDTX8/10で明記、XP80仕様表にも記載</td></tr>
+              <tr><th scope="row">S / D</th><td>末尾のS＝Single pedal、D＝Double（ツイン）pedal</td><td>XUPSとXUPDの差はペダルのみ</td></tr>
+              <tr><th scope="row">数字</th><td>グレード。402＜6＜8＜10、K＜K2＜K3＜K5、402＜432＜452</td><td>価格・構成が一貫して上昇</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Inferred</span>ラインナップから逆算した記号</h3>
+        <p>ここから先は公式の説明がなく、モデル間の差分から読み解いたものです。</p>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>記号</th><th>読み</th><th>そう考える理由</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">FS</th><td>標準ペダル（FP6110A）付きのセット</td><td>DTX6K-XFS・DTX6K2-XFSはいずれもFP6110Aが付属</td></tr>
+              <tr><th scope="row">UPS / UPD</th><td>UP＝UPgrade。上位ペダル付きのS＝シングル／D＝ダブル</td><td>K3・K5にはダブルチェーンのFP8500C系が付属</td></tr>
+              <tr><th scope="row">UPG</th><td>同じ「UP」でもこちらはシンバル追加のアップグレード</td><td>DTX432KUPGS・DTX452KUPGSはクラッシュが1枚増える</td></tr>
+              <tr><th scope="row">末尾のS<br>（DTX402KS等）</th><td>日本市場向けバンドルの印。ここのSは「シングルペダル」ではない</td><td>DTX402KSにはペダルが付かないがスツールは付く</td></tr>
+              <tr><th scope="row">記号なし<br>（DTX8K-M等）</th><td>グローバル型番のまま＝日本向けの追加ハードウェアなし</td><td>DTX8・DTX10だけスツールとペダルが別売</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Pitfall</span>「X＝TCS」で油断しないこと</h3>
+        <p>M / X の対比はDTX6・DTX8・DTX10すべてで成立します。DTX6K-X〜DTX6K3-XのスネアXP80とタムXP70も、ヤマハの仕様表に「TCS（テクスチャード・セルラー・シリコン）ヘッド」と明記されたTCSパッドです。DTX6でメッシュなのは2025年追加の DTX6K5-<b style="font-family:var(--font-mono)">M</b> だけ。</p>
+        <p class="caveat" style="margin-top:0">
+          <b>ただし同じTCSでも中身は別物。</b>　DTX6のTCSパッドは8"スネア／7"タムの小口径で、DTX8・DTX10は12"スネア／10"タムの大口径・木胴シェル付き。<b style="color:var(--cool)">記号が同じでも、口径とシェルの有無で打感はまったく違います。</b>「-X だから同じ打感」とは読まないでください。
+        </p>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Parts</span>パッド・ハードウェア側の型番</h3>
+        <p>こちらは規則がはっきりしていて、数字はおおむねサイズを表します。</p>
+        <div class="dtable-wrap">
+          <table class="dtable">
+            <thead><tr><th>接頭辞</th><th>意味</th><th>数字の読み方</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">PCY</th><td>Pad, CYmbal（シンバルパッド）</td><td>インチ×10＋5。135＝13"、155＝15"、175＝17"</td></tr>
+              <tr><th scope="row">XP</th><td>DTX-PAD。メッシュ／TCSの上位ドラムパッド</td><td>XP80＝8"、XP125SD＝12"スネア（SD＝Snare Drum）</td></tr>
+              <tr><th scope="row">TP</th><td>Tom Pad（ゴムパッド）</td><td>TP70＝7"。末尾Sは3ゾーン対応（TP70S）</td></tr>
+              <tr><th scope="row">KP</th><td>Kick Pad</td><td>グレード順。KP65 ＜ KP90 ＜ KP128</td></tr>
+              <tr><th scope="row">RHH</th><td>Real Hi-Hat。スタンドに載る上下可動式</td><td>RHH135＝13"</td></tr>
+              <tr><th scope="row">HH / KU</th><td>Hi-Hat controller / Kick Unit。どちらもペダル型の簡易デバイス</td><td>HH40・HH65、KU100</td></tr>
+              <tr><th scope="row">RS</th><td>Rack System</td><td>シリーズ番号と対応。RS6→DTX6、RS8→DTX8、RS10→DTX10</td></tr>
+              <tr><th scope="row">HS / FP / DFP / DT</th><td>Hi-hat Stand / Foot Pedal / Double Foot Pedal / Drum Trigger</td><td>数字が大きいほど上位</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="dblock">
+        <h3><span class="k">Practice</span>実際に読んでみる</h3>
+        <div class="worked">
+          <div class="wk">
+            <span class="wm">DTX6K5-MUPS</span>
+            <ul class="wp">
+              <li><b>DTX6</b><span>DTX6シリーズ</span></li>
+              <li><b>K5</b><span>キット、第5グレード</span></li>
+              <li><b>-M</b><span>メッシュヘッド仕様</span></li>
+              <li><b>UPS</b><span>上位ペダル・シングル付属</span></li>
+            </ul>
+            <p class="wr">＝ DTX6の最上位、大口径メッシュ、FP8500C付き</p>
+          </div>
+          <div class="wk">
+            <span class="wm">DTX452KUPGS</span>
+            <ul class="wp">
+              <li><b>DTX452</b><span>入門シリーズの最上位グレード</span></li>
+              <li><b>K</b><span>キット</span></li>
+              <li><b>UPG</b><span>シンバル追加のアップグレード</span></li>
+              <li><b>S</b><span>日本向けセット</span></li>
+            </ul>
+            <p class="wr">＝ 3ゾーンスネア＋クラッシュ2枚の全部入り入門機</p>
+          </div>
+          <div class="wk">
+            <span class="wm">DTX8K-X</span>
+            <ul class="wp">
+              <li><b>DTX8</b><span>DTX8シリーズ</span></li>
+              <li><b>K</b><span>キット</span></li>
+              <li><b>-X</b><span>TCS（シリコン）ヘッド</span></li>
+            </ul>
+            <p class="wr">＝ 木胴シェル＋TCS。日本向け記号が付かない＝ペダルもスツールも別売</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="note">
+      ヤマハは型番の命名規則を公式には公表していません。「意味が確定している記号」はメーカーの製品説明で明示されているもの、それ以外は現行14モデルの構成差から逆算した解釈です。
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    出典：ヤマハ株式会社 公式サイト（jp.yamaha.com）製品情報・仕様ページ。2026年8月時点の掲載内容にもとづく非公式のまとめです。
+  </div>
+</footer>
+
+<script>
+/* ===================== データ ===================== */
+const MODELS = [
+  {
+    id:"DTX402KS", stool:"DS550U", series:"DTX402", price:66000, release:"2018年7月", module:"DTX402",
+    snare:"7.5\" ゴム TP70", toms:"7.5\" ゴム ×3", cym:"10\" ×2（クラッシュ／ライド）",
+    hh:"10\" パッド＋HH40 コントローラー", hhstand:"—（コントローラー式）", extras:"チューニングキー、9chマルチケーブル、電源アダプター", kick:"KU100 キックユニット", pedal:"なし（フットスイッチ内蔵）",
+    rack:"DTX402ラック（省スペース）",
+    quiet:5, space:5, feel:1.4, pro:1,
+    head:"rubber", pedalKind:"switch", twin:false,
+    tagline:"とにかく静かに、とにかく安く始める1台",
+    caveat:"キックは踏み込む「ペダル」ではなくフットスイッチ。振動が出ない代わりに、本物のバスドラの踏み心地は身につきません。"
+  },
+  {
+    id:"DTX432KS", stool:"DS550U", series:"DTX402", price:79200, release:"2018年7月", module:"DTX402",
+    snare:"7.5\" ゴム TP70", toms:"7.5\" ゴム ×3", cym:"10\" ×2（クラッシュ／ライド）",
+    hh:"10\" パッド＋HH40 コントローラー", hhstand:"—（コントローラー式）", extras:"チューニングキー、9chマルチケーブル、電源アダプター", kick:"KP65 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"DTX402ラック（省スペース）",
+    quiet:3.2, space:4.8, feel:2, pro:1,
+    head:"rubber", pedalKind:"single", twin:true,
+    tagline:"入門機で唯一まともなキックペダルが付く最安構成",
+    caveat:"パッドは全面ゴム。打音と手首への跳ね返りはメッシュ機に明確に劣ります。"
+  },
+  {
+    id:"DTX432KUPGS", stool:"DS550U", series:"DTX402", price:83600, release:"2018年7月", module:"DTX402",
+    snare:"7.5\" ゴム TP70", toms:"7.5\" ゴム ×3", cym:"10\" ×3（クラッシュ2枚 PCY95AT／ライド）",
+    hh:"10\" パッド＋HH40 コントローラー", hhstand:"—（コントローラー式）", extras:"チューニングキー、9chマルチケーブル、ステレオフォンケーブル、電源アダプター", kick:"KP65 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"DTX402ラック（省スペース）",
+    quiet:3.2, space:4.6, feel:2.1, pro:1.2,
+    head:"rubber", pedalKind:"single", twin:true,
+    tagline:"クラッシュ2枚。入門機のまま曲の再現度を上げる",
+    caveat:"シンバルは増えますがスネアは1ゾーン。リムショットを打ち分けたいなら DTX452 側へ。"
+  },
+  {
+    id:"DTX452KS", stool:"DS550U", series:"DTX402", price:83600, release:"2018年7月", module:"DTX402",
+    snare:"7.5\" TP70S（3ゾーン）", toms:"7.5\" ゴム ×3", cym:"10\" ×2（クラッシュ／ライド）",
+    hh:"10\" パッド＋HH40 コントローラー", hhstand:"—（コントローラー式）", extras:"チューニングキー、9chマルチケーブル、電源アダプター", kick:"KP65 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"DTX402ラック（省スペース）",
+    quiet:3.2, space:4.8, feel:2.4, pro:1.2,
+    head:"rubber", pedalKind:"single", twin:true,
+    tagline:"リムショットとクローズドリムショットが打てる入門機",
+    caveat:"3ゾーンなのはスネアだけ。タムとシンバルは入門仕様のままです。"
+  },
+  {
+    id:"DTX452KUPGS", stool:"DS550U", series:"DTX402", price:90200, release:"2018年7月", module:"DTX402",
+    snare:"7.5\" TP70S（3ゾーン）", toms:"7.5\" ゴム ×3", cym:"10\" ×3（クラッシュ2枚 PCY95AT／ライド）",
+    hh:"10\" パッド＋HH40 コントローラー", hhstand:"—（コントローラー式）", extras:"チューニングキー、9chマルチケーブル、ステレオフォンケーブル、電源アダプター", kick:"KP65 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"DTX402ラック（省スペース）",
+    quiet:3.2, space:4.6, feel:2.5, pro:1.4,
+    head:"rubber", pedalKind:"single", twin:true,
+    tagline:"DTX402シリーズの全部入り。10万円以内の上限",
+    caveat:"ここまで来ると、あと6万円足せばメッシュスネア＋DTX-PRO音源の DTX6K-XFS が視野に入ります。"
+  },
+  {
+    id:"DTX6K-XFS", stool:"DS550U", series:"DTX6", price:148500, release:"2020年11月", module:"DTX-PRO",
+    snare:"8\" TCS XP80（3ゾーン）", toms:"7\" ゴム TP70 ×3", cym:"10\"クラッシュ＋13\" PCY135 ライド（3ゾーン）",
+    hh:"HH65 コントローラー", hhstand:"—（コントローラー式）", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP65 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"DTX6Kラック（折りたたみ可）",
+    quiet:3.6, space:4.4, feel:2.8, pro:3,
+    head:"tcs_s", pedalKind:"single", twin:true,
+    tagline:"上位と同じDTX-PRO音源が載る、いちばん小さい入口",
+    caveat:"ハイハットはスタンドに載せないコントローラー式。タム3枚もゴムのままです。"
+  },
+  {
+    id:"DTX6K2-XFS", stool:"DS550U", series:"DTX6", price:192500, release:"2020年11月", module:"DTX-PRO",
+    snare:"8\" TCS XP80（3ゾーン）", toms:"7\" ゴム TP70 ×3", cym:"13\" PCY135 ×2（3ゾーン）",
+    hh:"RHH135（13\"／2ゾーン）", hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"FP6110A シングル（付属）",
+    rack:"RS6",
+    quiet:3.1, space:3.9, feel:3.1, pro:3.2,
+    head:"tcs_s", pedalKind:"single", twin:true,
+    tagline:"本物のスタンドに載るハイハットが手に入る最初のモデル",
+    caveat:"タムはゴムパッド。3枚ともTCSパッドにしたいなら DTX6K3 以上。"
+  },
+  {
+    id:"DTX6K3-XUPS", stool:"DS750", series:"DTX6", price:239800, release:"2020年11月", module:"DTX-PRO",
+    snare:"8\" TCS XP80（3ゾーン）", toms:"7\" TCS XP70 ×3", cym:"13\" PCY135 ×2（3ゾーン）",
+    hh:"RHH135（13\"／2ゾーン）", hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"FP8500C シングル（ダブルチェーン／付属）",
+    rack:"RS6",
+    quiet:3.3, space:3.6, feel:3.4, pro:3.4,
+    head:"tcs_s", pedalKind:"pro", twin:true,
+    tagline:"全パッドTCS＋上位ペダル。趣味用途の完成形",
+    caveat:"シンバルは13インチ2枚のみ。ライドを大きくしたい場合は PCY155 などを別途追加。"
+  },
+  {
+    id:"DTX6K3-XUPD", stool:"DS750", series:"DTX6", price:264000, release:"2020年11月", module:"DTX-PRO",
+    snare:"8\" TCS XP80（3ゾーン）", toms:"7\" TCS XP70 ×3", cym:"13\" PCY135 ×2（3ゾーン）",
+    hh:"RHH135（13\"／2ゾーン）", hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"DFP8500C ツインペダル（付属）",
+    rack:"RS6",
+    quiet:3.2, space:3.6, feel:3.5, pro:3.5,
+    head:"tcs_s", pedalKind:"twin", twin:true,
+    tagline:"XUPSのツインペダル版。ツーバス前提ならこれ一択",
+    caveat:"パッド構成は XUPS と同一。ツインペダルを使わないなら24,200円の差は無駄になります。"
+  },
+  {
+    id:"DTX6K5-MUPS", stool:"DS750", series:"DTX6", price:280500, release:"2025年5月", module:"DTX-PRO",
+    snare:"12\" メッシュ XP120L-M（REMO 2Ply／チューニング可）", toms:"10\" メッシュ XP100L-M ×3",
+    cym:"13\" PCY135 ×2＋15\" PCY155 ライド", hh:"RHH135（13\"／2ゾーン）",
+    hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"FP8500C シングル（ダブルチェーン／付属）", rack:"RS6",
+    quiet:4.2, space:3.1, feel:4, pro:3.6,
+    head:"mesh_l", pedalKind:"pro", twin:true,
+    tagline:"2025年追加。DTX8級の大口径パッドを28万円で",
+    caveat:"シェル（木胴）は使わずラックはRS6のまま。見た目と剛性はDTX8とはっきり差があります。"
+  },
+  {
+    id:"DTX8K-M", stool:"別売", series:"DTX8", price:367400, release:"2021年9月", module:"DTX-PRO",
+    snare:"12\" メッシュ XP125SD-M（バーチシェル／2ゾーン）", toms:"10\" メッシュ XP105T-M ×3",
+    cym:"13\" PCY135 ×2＋15\" PCY155 ライド", hh:"RHH135（13\"／2ゾーン）",
+    hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"別売", rack:"RS8",
+    quiet:4.2, space:2.6, feel:4.2, pro:4,
+    head:"mesh_l", pedalKind:"none", twin:true,
+    tagline:"木胴シェル＋メッシュ。静かさと本格さの交点",
+    caveat:"キックペダルとドラムスツールが別売。付属するハードウェアはハイハットスタンド HS650A とラックのみです。"
+  },
+  {
+    id:"DTX8K-X", stool:"別売", series:"DTX8", price:443300, release:"2021年9月", module:"DTX-PRO",
+    snare:"12\" TCS XP125SD-X（バーチシェル／2ゾーン）", toms:"10\" TCS XP105T-X ×3",
+    cym:"13\" PCY135 ×2＋15\" PCY155 ライド", hh:"RHH135（13\"／2ゾーン）",
+    hhstand:"HS650A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP90 キックパッド", pedal:"別売", rack:"RS8",
+    quiet:3.2, space:2.6, feel:4.5, pro:4.1,
+    head:"tcs_l", pedalKind:"none", twin:true,
+    tagline:"シリコンヘッドTCS。生ドラムに近い打感を優先する人へ",
+    caveat:"TCSはメッシュより打音が大きめ。集合住宅で夜に叩くなら -M（メッシュ）を。ペダルとスツールは別売です。"
+  },
+  {
+    id:"DTX10K-M", stool:"別売", series:"DTX10", price:594000, release:"2021年9月", module:"DTX-PROX",
+    snare:"12\" メッシュ XP125SD-M（バーチシェル）", toms:"10\" ×2＋12\" フロア（メッシュ）",
+    cym:"13\"＋15\"＋17\" PCY175 ライド", hh:"RHH135（13\"／2ゾーン）",
+    hhstand:"HS740A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP128 12\" キックパッド", pedal:"別売", rack:"RS10-HXR",
+    quiet:4, space:2, feel:4.7, pro:5,
+    head:"mesh_l", pedalKind:"none", twin:true,
+    tagline:"フラッグシップ。17\"ライドとDTX-PROX音源",
+    caveat:"設置には生ドラム同等のスペースが必要。ペダルとスツールは別売です。"
+  },
+  {
+    id:"DTX10K-X", stool:"別売", series:"DTX10", price:671000, release:"2021年9月", module:"DTX-PROX",
+    snare:"12\" TCS XP125SD-X（バーチシェル）", toms:"10\" ×2＋12\" フロア（TCS）",
+    cym:"13\"＋15\"＋17\" PCY175 ライド", hh:"RHH135（13\"／2ゾーン）",
+    hhstand:"HS740A", extras:"電源アダプター、モジュールホルダー、Cubase AI ダウンロード", kick:"KP128 12\" キックパッド", pedal:"別売", rack:"RS10-HXR",
+    quiet:3, space:2, feel:5, pro:5,
+    head:"tcs_l", pedalKind:"none", twin:true,
+    tagline:"ヤマハ電子ドラムの最上位。打感・音・拡張性すべて最大",
+    caveat:"67万円。防音環境と生ドラム相応のスペースが前提で、ペダルとスツールも別売です。"
+  }
+];
+
+const SERIES_INFO = {
+  "DTX402":{dot:"d-402", note:"入門。音源はDTX402、10キット／287音色"},
+  "DTX6":{dot:"d-6", note:"DTX-PRO音源。40プリセットキット／712音色"},
+  "DTX8":{dot:"d-8", note:"DTX-PRO音源＋バーチ木胴シェル"},
+  "DTX10":{dot:"d-10", note:"DTX-PROX音源のフラッグシップ"}
+};
+
+const GEAR = [
+  {n:"DTX-PROX", p:"¥176,000", d:"DTX10シリーズに載るフラッグシップ音源。7本のフェーダーで音作りを手元で完結でき、最大8系統のINDIVIDUAL OUT と MIDI IN/OUT を備えます。",
+   specs:[["プリセットキット","70"],["音色数","733"],["最大同時発音","256"],["発売","2021年9月"]]},
+  {n:"DTX-PRO", p:"¥106,700", d:"DTX6・DTX8に共通で載る音源。KIT MODIFIERノブ3本で音の質感を直感的に変えられます。トリガー入力10（Y字ケーブルで最大14パッド）。",
+   specs:[["プリセットキット","40"],["音色数","712"],["最大同時発音","256"],["発売","2020年11月"]]},
+  {n:"DTX-MULTI 12", p:"¥84,700", d:"12個のパッドを1台に収めたデジタルパーカッション。パーカッション音源としても、既存キットの拡張用としても使えます。",
+   specs:[["内蔵音色","1,277"],["発売","2009年11月"]]},
+  {n:"DD-75", p:"オープン価格", d:"卓上サイズのポータブル電子ドラム。7パッド＋フットスイッチ2個。持ち運びや、まず打楽器に触れてみる用途に。",
+   specs:[["形態","卓上／ポータブル"],["発売","2017年6月"]]},
+  {n:"EAD10", p:"オープン価格", d:"生ドラムに後付けするモジュール＋センサーユニット。手持ちのアコースティックキットにエフェクトや録音機能を足せます（電子ドラムセットではありません）。",
+   specs:[["用途","アコースティック拡張"],["構成","センサー＋音源"]]},
+  {n:"DT50S / DT50K", p:"DT50S ¥11,000", d:"生ドラムに取り付けるドラムトリガー。DT50Sはヘッドとリムを分離して拾うデュアルトリガー、DT50Kはバスドラ用。",
+   specs:[["対応","スネア・タム／バスドラム"],["構造","ダイキャストボディ"]]}
+];
+
+/* ===================== 診断ロジック ===================== */
+const STEPS = [
+  {
+    key:"budget", label:"予算", num:"01",
+    q:"セット総額の予算は？",
+    hint:"表示は税込のヤマハ希望小売価格。実売はこれより安くなることが多いです。",
+    opts:[
+      {v:100000, l:"〜10万円", d:"入門機の価格帯。DTX402シリーズが対象", a:"〜10万円"},
+      {v:200000, l:"10〜20万円", d:"メッシュスネアと上位音源が視野に入る", a:"10〜20万円"},
+      {v:290000, l:"20〜30万円", d:"全パッドメッシュ、ハイハットスタンドも", a:"20〜30万円"},
+      {v:460000, l:"30〜50万円", d:"木胴シェルのDTX8シリーズ", a:"30〜50万円"},
+      {v:9999999, l:"上限なし", d:"最上位まで検討する", a:"上限なし"}
+    ]
+  },
+  {
+    key:"quiet", label:"静音性", num:"02",
+    q:"どのくらい音と振動に気を使う環境？",
+    hint:"電子ドラムでも、スティックの打音と床に伝わる振動はゼロにはなりません。",
+    opts:[
+      {v:"max", l:"集合住宅・夜も叩きたい", d:"静音性を最優先する", a:"集合住宅・夜も"},
+      {v:"mid", l:"戸建て・昼間なら平気", d:"多少の打音は許容できる", a:"戸建て・昼間"},
+      {v:"none", l:"防音室・スタジオ", d:"音は気にしない", a:"防音室・スタジオ"}
+    ]
+  },
+  {
+    key:"space", label:"設置スペース", num:"03",
+    q:"置く場所の広さは？",
+    hint:"DTX8・DTX10は生ドラムに近い設置面積になります。",
+    opts:[
+      {v:"tight", l:"省スペース最優先", d:"部屋の一角。使わない時は畳みたい", a:"省スペース"},
+      {v:"normal", l:"6畳に常設できる", d:"一般的な部屋にセットしたまま", a:"6畳に常設"},
+      {v:"roomy", l:"広さは十分ある", d:"設置面積は気にしない", a:"広さは十分"}
+    ]
+  },
+  {
+    key:"purpose", label:"目的・レベル", num:"04",
+    q:"何のために使う？",
+    hint:"",
+    opts:[
+      {v:"start", l:"これから始める", d:"叩いたことがない／基礎練習から", a:"これから始める"},
+      {v:"hobby", l:"趣味で続けている", d:"曲を叩いて楽しみたい", a:"趣味で継続"},
+      {v:"serious", l:"本気の練習台にする", d:"バンドやスタジオの生ドラムの代替として", a:"本気の練習台"},
+      {v:"pro", l:"録音・ライブでも使う", d:"制作や本番の音源としても使う", a:"録音・ライブ"}
+    ]
+  },
+  {
+    key:"feel", label:"打感", num:"05",
+    q:"パッドの打感へのこだわりは？",
+    hint:"ゴム ＜ 小口径TCS（8\"/7\"）＜ 大口径メッシュ・TCS（12\"/10\"）の順に生ドラムへ近づきます。",
+    opts:[
+      {v:"any", l:"こだわらない", d:"ゴムパッドでも構わない", a:"こだわらない"},
+      {v:"mesh", l:"メッシュがいい", d:"打音が小さく跳ね返りが自然", a:"メッシュ希望"},
+      {v:"real", l:"生ドラムに近づけたい", d:"大口径パッドやTCSヘッドを重視", a:"生に近い打感"}
+    ]
+  },
+  {
+    key:"pedal", label:"ペダル", num:"06",
+    q:"キックペダルはどうする？",
+    hint:"DTX8・DTX10はペダル別売。すでに愛用のペダルがある人向けの設計です。",
+    opts:[
+      {v:"switch", l:"フットスイッチで十分", d:"振動を出したくない／まず慣れたい", a:"フットスイッチで可"},
+      {v:"included", l:"付属していてほしい", d:"買い足しなしですぐ叩きたい", a:"ペダル付属希望"},
+      {v:"twin", l:"ツインペダルを使いたい", d:"ツーバスの練習をする", a:"ツインペダル"},
+      {v:"own", l:"手持ちのペダルを使う", d:"別売でも問題ない", a:"手持ちを使用"}
+    ]
+  }
+];
+
+function scoreModel(m, a){
+  let s = 0;
+  const why = [];
+
+  // 01 予算
+  if(a.budget){
+    if(m.price > a.budget){ s -= 40; }
+    else {
+      s += 3 + 3 * (m.price / Math.min(a.budget, 700000));
+      why.push({k:"budget", t:`予算内（¥${m.price.toLocaleString()}）で、その中では上位の構成`});
+    }
+  }
+  // 02 静音性
+  if(a.quiet === "max"){
+    s += m.quiet * 2.4;
+    if(m.quiet >= 4) why.push({k:"quiet", t:m.pedalKind==="switch"
+      ? "キックがフットスイッチ式で床への振動がほぼ出ず、集合住宅でもっとも扱いやすい"
+      : "打面が全面メッシュで打音が小さく、夜間の練習に向く"});
+  } else if(a.quiet === "mid"){
+    s += m.quiet * 0.8;
+  } else {
+    s += m.feel * 0.5;
+    if(m.head === "tcs_l") why.push({k:"quiet", t:"音量を気にしない環境なら、打音より打感で選べる大口径TCSヘッドが活きる"});
+  }
+  // 03 スペース
+  if(a.space === "tight"){
+    s += m.space * 2.2;
+    if(m.space >= 4.4) why.push({k:"space", t:"設置面積が小さく、ラックも省スペース設計"});
+  } else if(a.space === "normal"){
+    s += m.space * 0.9;
+  } else {
+    s += m.feel * 0.6;
+  }
+  // 04 目的
+  if(a.purpose === "start"){
+    s += (5.2 - m.feel) * 1.1;
+    if(m.series === "DTX402"){ s += 2.5; why.push({k:"purpose", t:"10種類のトレーニング機能を内蔵し、初めての1台として作られたシリーズ"}); }
+  } else if(a.purpose === "hobby"){
+    s += m.feel * 1.1 + m.pro * 0.4;
+    if(m.series === "DTX6") s += 1.2;
+  } else if(a.purpose === "serious"){
+    s += m.feel * 2.0 + m.pro * 0.6;
+    if(m.feel >= 3.4) why.push({k:"purpose", t:"生ドラムの代替として練習するのに足るパッドサイズと打ち分け精度"});
+  } else {
+    s += m.pro * 2.2 + m.feel * 1.0;
+    if(m.module === "DTX-PROX") why.push({k:"purpose", t:"DTX-PROX音源で最大8系統の個別出力とMIDI IN/OUTに対応し、録音・ライブでの取り回しが利く"});
+    else if(m.module === "DTX-PRO") why.push({k:"purpose", t:"DTX-PRO音源はUSBでPCと直結でき、オーディオ／MIDIの入出力に対応"});
+  }
+  // 05 打感
+  if(a.feel === "any"){
+    if(m.head === "rubber") s += 2.2;
+    if(m.head === "tcs_s") s += 1.0;
+    s += (5 - m.feel) * 0.4;
+  } else if(a.feel === "mesh"){
+    if(m.head === "rubber") s -= 4;
+    if(m.head === "tcs_s") s -= 1.5;
+    if(m.head === "mesh_l"){ s += 4.5; why.push({k:"feel", t:"12インチスネア＋10インチタムの大口径メッシュ（REMO 2プライ）で、静かさと自然な跳ね返りを両立"}); }
+    if(m.head === "tcs_l") s += 0.5;
+  } else {
+    if(m.head === "rubber") s -= 7;
+    if(m.head === "tcs_s"){ s += 1.0; why.push({k:"feel", t:"8インチのTCS（シリコン）パッドで、ゴムパッドより自然な打感と静かさ"}); }
+    if(m.head === "mesh_l") s += 3.2;
+    if(m.head === "tcs_l"){ s += 5.5; why.push({k:"feel", t:"12インチの大口径TCS（シリコン）ヘッドは、ヤマハのラインナップで最も生ドラムに近い打感"}); }
+  }
+  // 06 ペダル
+  if(a.pedal === "switch"){
+    if(m.pedalKind === "switch"){ s += 5; why.push({k:"pedal", t:"KU100キックユニットは踏み込んでも床が鳴らず、階下への振動が問題になりにくい"}); }
+    if(m.pedalKind === "none") s -= 3;
+  } else if(a.pedal === "included"){
+    if(m.pedalKind === "single"){ s += 3; why.push({k:"pedal", t:"FP6110Aシングルペダルが付属し、追加購入なしで始められる"}); }
+    if(m.pedalKind === "pro"){ s += 4.2; why.push({k:"pedal", t:"ダブルチェーンのFP8500Cが付属。入門用ペダルからの買い替えが要らない"}); }
+    if(m.pedalKind === "twin") s += 3;
+    if(m.pedalKind === "switch") s -= 4;
+    if(m.pedalKind === "none") s -= 6;
+  } else if(a.pedal === "twin"){
+    if(m.pedalKind === "twin"){ s += 7; why.push({k:"pedal", t:"DFP8500Cツインペダルが最初から付属する唯一のモデル"}); }
+    else if(m.pedalKind === "none"){ s += 2.5; why.push({k:"pedal", t:"ペダル別売なので、好みのツインペダルをそのまま組み合わせられる"}); }
+    else if(m.pedalKind === "switch") s -= 10;
+    else s += 0.5;
+  } else {
+    if(m.pedalKind === "none"){ s += 3.5; why.push({k:"pedal", t:"ペダルが別売の構成で、手持ちのペダルを活かせる（ただしドラムスツールも別売）"}); }
+    if(m.pedalKind === "switch") s -= 5;
+  }
+  return {s, why};
+}
+
+/* ===================== 状態と描画 ===================== */
+const answers = {};
+let step = 0;
+const stage = document.getElementById("stage");
+const rail = document.getElementById("rail");
+
+function renderRail(){
+  rail.innerHTML = "";
+  STEPS.forEach((st, i) => {
+    const b = document.createElement("button");
+    b.className = "rail-item" + (i === step ? " active" : "") + (answers[st.key] !== undefined ? " done" : "");
+    if(answers[st.key] === undefined && i !== step) b.disabled = true;
+    b.innerHTML = `<span class="rail-n">${st.num}</span><span><span class="rail-l">${st.label}</span>` +
+      (answers[st.key] !== undefined ? `<span class="rail-a">${answers[st.key].a}</span>` : "") + `</span>`;
+    b.addEventListener("click", () => { step = i; renderAll(); });
+    rail.appendChild(b);
+  });
+}
+
+function renderQuestion(){
+  const st = STEPS[step];
+  const card = document.createElement("div");
+  card.className = "qcard";
+  card.innerHTML =
+    `<p class="qnum">条件 ${st.num} / 06</p>` +
+    `<h2 class="qtitle">${st.q}</h2>` +
+    (st.hint ? `<p class="qhint">${st.hint}</p>` : `<div style="height:14px"></div>`) +
+    `<div class="opts"></div>` +
+    `<div class="qfoot"></div>`;
+  const wrap = card.querySelector(".opts");
+  st.opts.forEach(o => {
+    const b = document.createElement("button");
+    b.className = "opt";
+    b.innerHTML = `<span class="ol">${o.l}</span><span class="od">${o.d}</span>`;
+    b.addEventListener("click", () => {
+      answers[st.key] = {v:o.v, a:o.a};
+      step = Math.min(step + 1, STEPS.length);
+      renderAll();
+    });
+    wrap.appendChild(b);
+  });
+  const foot = card.querySelector(".qfoot");
+  if(step > 0){
+    const back = document.createElement("button");
+    back.className = "linkbtn";
+    back.textContent = "← ひとつ戻る";
+    back.addEventListener("click", () => { step--; renderAll(); });
+    foot.appendChild(back);
+  }
+  if(Object.keys(answers).length){
+    const reset = document.createElement("button");
+    reset.className = "linkbtn";
+    reset.textContent = "最初からやり直す";
+    reset.addEventListener("click", resetAll);
+    foot.appendChild(reset);
+  }
+  stage.innerHTML = "";
+  stage.appendChild(card);
+}
+
+function renderResult(){
+  const a = {};
+  STEPS.forEach(st => { a[st.key] = answers[st.key] ? answers[st.key].v : null; });
+
+  const ranked = MODELS
+    .map(m => ({m, ...scoreModel(m, a)}))
+    .sort((x, y) => y.s - x.s);
+
+  const top = ranked[0];
+  const inBudget = ranked.filter(r => r.m.price <= a.budget);
+  const overBudgetOnly = inBudget.length === 0;
+
+  // 重複した理由を整理（同じ観点は1つまで）
+  const seen = new Set();
+  const why = top.why.filter(w => (seen.has(w.k) ? false : (seen.add(w.k), true))).slice(0, 5);
+
+  const div = document.createElement("div");
+  div.className = "result";
+  div.innerHTML = `
+    <div class="verdict">
+      <p class="verdict-tag">あなたの条件でのおすすめ</p>
+      <h3>${top.m.id}</h3>
+      <p class="series">${top.m.series}シリーズ ／ 音源 ${top.m.module} ／ ${top.m.release}発売</p>
+      <div class="price-row">
+        <span class="price num">¥${top.m.price.toLocaleString()}<small>税込・希望小売価格</small></span>
+      </div>
+      <p style="margin-top:14px;font-size:14.5px;color:var(--ink-2);line-height:1.8">${top.m.tagline}。</p>
+      <div class="why"><ul>${why.map(w => `<li>${w.t}</li>`).join("")}</ul></div>
+      <p class="caveat"><b>ただし</b>　${top.m.caveat}</p>
+    </div>
+    <div class="runners">
+      <h4>次点</h4>
+      <div class="runner-grid">
+        ${ranked.slice(1, 4).map(r => `
+          <div class="runner">
+            <span class="rn">${r.m.id}</span>
+            <span class="rp num">¥${r.m.price.toLocaleString()}</span>
+            <span class="rw">${r.m.tagline}${r.m.price > a.budget ? "（予算オーバー）" : ""}</span>
+          </div>`).join("")}
+      </div>
+    </div>
+    ${overBudgetOnly ? `<p class="caveat" style="margin-top:22px"><b>注意</b>　選んだ予算に収まるモデルがありません。上の候補はいずれも予算を超えています。</p>` : ""}
+    <div class="qfoot" style="margin-top:30px">
+      <button class="linkbtn" id="back-last">← 条件を変える</button>
+      <button class="linkbtn" id="reset-all">最初からやり直す</button>
+      <button class="linkbtn" id="go-table">比較表で全モデルを見る</button>
+    </div>`;
+  stage.innerHTML = "";
+  stage.appendChild(div);
+  div.querySelector("#back-last").addEventListener("click", () => { step = STEPS.length - 1; renderAll(); });
+  div.querySelector("#reset-all").addEventListener("click", resetAll);
+  div.querySelector("#go-table").addEventListener("click", () => selectTab("compare"));
+}
+
+function resetAll(){
+  Object.keys(answers).forEach(k => delete answers[k]);
+  step = 0;
+  renderAll();
+}
+
+function renderAll(){
+  renderRail();
+  if(step >= STEPS.length) renderResult();
+  else renderQuestion();
+}
+
+/* ===================== 比較表 ===================== */
+const COLS = [
+  {k:"price",   h:"価格",             g:"base", cls:"p", fmt:m => "¥" + m.price.toLocaleString()},
+  {k:"module",  h:"音源",             g:"base"},
+  {k:"snare",   h:"スネア",           g:"pad"},
+  {k:"toms",    h:"タム",             g:"pad"},
+  {k:"cym",     h:"シンバル",         g:"pad"},
+  {k:"hh",      h:"ハイハットパッド", g:"pad"},
+  {k:"kick",    h:"キックパッド",     g:"pad"},
+  {k:"pedal",   h:"キックペダル",     g:"inc"},
+  {k:"stool",   h:"ドラムスツール",   g:"inc"},
+  {k:"hhstand", h:"ハイハットスタンド", g:"inc"},
+  {k:"rack",    h:"ラック",           g:"inc"},
+  {k:"extras",  h:"その他付属品",     g:"inc"},
+  {k:"release", h:"発売",             g:"base"}
+];
+let filter = "all";
+let view = "all";
+
+function activeCols(){
+  return COLS.filter(c => c.g === "base" || view === "all" || c.g === view);
+}
+function makeChips(el, list, current, onPick){
+  const label = el.querySelector(".chiplabel");
+  el.innerHTML = "";
+  if(label) el.appendChild(label);
+  list.forEach(([v, l]) => {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.setAttribute("aria-pressed", String(current === v));
+    b.textContent = l;
+    b.addEventListener("click", () => onPick(v));
+    el.appendChild(b);
+  });
+}
+function renderChips(){
+  makeChips(document.getElementById("chips"),
+    [["all", "すべて（14モデル）"], ["DTX402", "DTX402"], ["DTX6", "DTX6"], ["DTX8", "DTX8"], ["DTX10", "DTX10"]],
+    filter, v => { filter = v; renderChips(); renderTable(); });
+  makeChips(document.getElementById("viewchips"),
+    [["all", "全項目"], ["pad", "パッド構成だけ"], ["inc", "付属品だけ"]],
+    view, v => { view = v; renderChips(); renderTable(); });
+}
+function renderTable(){
+  const cols = activeCols();
+  const hr = document.getElementById("thead-row");
+  hr.innerHTML = `<th>モデル</th>` + cols.map(c => `<th>${c.h}</th>`).join("");
+  const tb = document.getElementById("tbody");
+  tb.innerHTML = "";
+  MODELS.filter(m => filter === "all" || m.series === filter).forEach(m => {
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<th scope="row"><span class="dot ${SERIES_INFO[m.series].dot}"></span>${m.id}</th>` +
+      cols.map(c => `<td${c.cls ? ` class="${c.cls}"` : ""}>${c.fmt ? c.fmt(m) : m[c.k]}</td>`).join("");
+    tb.appendChild(tr);
+  });
+  document.getElementById("table").style.minWidth = (190 + cols.length * 118) + "px";
+}
+
+/* ===================== 関連機器 ===================== */
+function renderGear(){
+  const g = document.getElementById("gear");
+  g.innerHTML = GEAR.map(x => `
+    <div class="gear">
+      <span class="gn">${x.n}</span>
+      <span class="gp num">${x.p}</span>
+      <p class="gd">${x.d}</p>
+      <dl>${x.specs.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+    </div>`).join("");
+}
+
+/* ===================== タブ ===================== */
+function selectTab(name){
+  ["finder", "compare", "gear", "acc", "decoder"].forEach(n => {
+    document.getElementById("tab-" + n).setAttribute("aria-selected", String(n === name));
+    document.getElementById("panel-" + n).hidden = (n !== name);
+  });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+["finder", "compare", "gear", "acc", "decoder"].forEach(n => {
+  document.getElementById("tab-" + n).addEventListener("click", () => selectTab(n));
+});
+
+renderAll();
+renderChips();
+renderTable();
+renderGear();
+</script>
+</body>
+</html>
