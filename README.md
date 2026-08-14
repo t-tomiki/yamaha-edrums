@@ -2,7 +2,7 @@
 
 ヤマハの現行電子ドラムセット全14モデルを1ページにまとめた、非公式の比較サイトです。
 
-**公開ページ:** https://tommy10310124.github.io/yamaha-edrums/
+**公開ページ:** https://t-tomiki.github.io/yamaha-edrums/
 
 ## 中身
 
